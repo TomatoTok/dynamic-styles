@@ -55,3 +55,13 @@ footer{
     font-weight: 300;
     position: fixed;
 }
+@media screen and (max-width: 900px) {
+    div{
+        margin: 20px 5%;
+        padding:50px;
+    }
+    button{
+        padding:15px;
+    }
+    
+}
