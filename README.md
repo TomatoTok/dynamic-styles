@@ -1,2 +1,2 @@
-# dynamic-styles
-Practica de JS
+# Dynamic-styles/ Estilos-Dinamicos
+Practica de JS en estilos con arrays e iteraciones.
