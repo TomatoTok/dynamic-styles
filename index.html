@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Estilos Dinamicos</title>
+</head>
+<body>
+    
+    <section id="contenedor">
+        <article id="marco">
+            <div id="estilo1"><button onclick="colorChanger()" id="estilo-btn1">Cambiar color</button></div>
+            <div id="estilo2" onclick="colorChanger2()"><p>Sin Boton <br>(presione en el cuadrado)</p></div>
+            <div id="estilo3"><button onclick="sizeFontChanger()" id="estilo-btn3">Cambiar tamaño</button></div>
+            <div id="estilo4"><button onclick="fontChanger()" id="estilo-btn4">Cambiar fuente</button><br><p>"Hello world"</p></div>
+        </article>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+<footer><p>Tomas Bascal & Red Coffe Development</p></footer>
+</html>

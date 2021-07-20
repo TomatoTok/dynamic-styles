@@ -1,0 +1,57 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color:whitesmoke;
+    color: black;
+    font-weight:300 ;
+}
+div{
+    padding:100px;
+    margin: 5%;
+    justify-content:center;
+}
+div#estilo2{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#contenedor{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+button{
+padding: 25px;
+background-color: transparent;
+border-radius: 18px;
+opacity: 0.6;
+font-weight:300 ;
+transition: 0.3s;
+}
+
+button:hover{
+background-image: linear-gradient(to top right, #A9F1DF,#FFBBBB);
+opacity: 1;
+}
+footer{
+    width: 100%;
+    border-top: 0.5px solid gray;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 20px;
+    font-weight: 300;
+    position: fixed;
+}
