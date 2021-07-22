@@ -65,11 +65,20 @@ footer > p{
 }
 @media screen and (max-width: 900px) {
     div{
-        margin: 20px 5%;
+        margin: 10px 2%;
         padding:50px;
     }
     button{
         padding:15px;
+    }
+    article{
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    p{
+        margin: 0px;
+        padding-top:20px;
     }
     
 }

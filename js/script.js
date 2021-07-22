@@ -4,9 +4,9 @@ const fonts = ["'Courier New'","Arial","Georgia","Helvetica", "monospace","sans-
 const colors = ["#A6C1EE","#FF9A9E","#E6DCE8","#D494F7","#F6D365","white"];
 const colors2 = ["#FBC2EB","#FAD0C4","#FDCBF1","#F16FD3","#FDA085","whitesmoke"];
 const sizes = ["0.7rem","1.2rem","1.8rem","1.0rem"]
-const frase = ["Buen dia c:","Aún no te rindas","No importa, hoy lo hiciste muy bien","Me alegro que estes aquí","Que bien lees",
-"Gracias por pasarte","No todos los dias se ven bellezas como tú ;v","Sal a pasear, es bueno en muchos aspectos",":D","Quien fuera bizco para verte dos veces",
-"Twice > generic kpop girl group","Me dicen Tomato"]
+const frase = ["Buen dia c:","Aún no te rindas","No importa, lo hiciste muy bien hoy","Me alegro que estes aquí","Que bien lees",
+"Gracias por pasarte","No todos los dias se ven bellezas como tú ;)","Sal a pasear, es bueno en muchos aspectos",":D","Quien fuera bizco para verte dos veces",
+"Twice > generic kpop girl group","Me dicen Tomato","Bañate no seas otaku","Netflix está sobrevalorado","La tuya por si acaso"]
 
 //Declaracion de funciones
 
@@ -26,6 +26,7 @@ function fontChanger(){
         button.style.fontFamily = fonts[it2];})); 
 
     document.getElementById("estilo2").style.fontFamily = fonts[it2];
+    document.getElementById("estilo4").style.fontFamily = fonts[it2];
 
         it2++;
 
@@ -65,5 +66,5 @@ function nameChanger(){
 }
 
 function beautifulText(){
-    document.getElementById("frase").textContent = "\" " + frase[Math.floor(Math.random()*frase.length)]+ " \"";
+    document.getElementById("frase").textContent = "\"" + frase[Math.floor(Math.random()*frase.length)]+ "\"";
 }
