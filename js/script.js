@@ -4,6 +4,9 @@ const fonts = ["'Courier New'","Arial","Georgia","Helvetica", "monospace","sans-
 const colors = ["#A6C1EE","#FF9A9E","#E6DCE8","#D494F7","#F6D365","white"];
 const colors2 = ["#FBC2EB","#FAD0C4","#FDCBF1","#F16FD3","#FDA085","whitesmoke"];
 const sizes = ["0.7rem","1.2rem","1.8rem","1.0rem"]
+const frase = ["Buen dia c:","Aún no te rindas","No importa, hoy lo hiciste muy bien","Me alegro que estes aquí","Que bien lees",
+"Gracias por pasarte","No todos los dias se ven bellezas como tú ;v","Sal a pasear, es bueno en muchos aspectos",":D","Quien fuera bizco para verte dos veces",
+"Twice > generic kpop girl group","Me dicen Tomato"]
 
 //Declaracion de funciones
 
@@ -16,11 +19,16 @@ it1 = 0;
 }
 
 function fontChanger(){
-    document.getElementById("estilo4").style.fontFamily = fonts[it2];
-    document.getElementById("estilo-btn1").style.fontFamily = fonts[it2];
-    document.getElementById("estilo-btn4").style.fontFamily = fonts[it2];
-    document.getElementById("estilo-btn3").style.fontFamily = fonts[it2];
-    it2++;
+//primero se crea un array desde la seleccion de todos los "button" luego se mapea a cada uno
+//de ellos y se le envia por parametro a una funcion que lo altera
+
+    (Array.from(document.querySelectorAll("button")).map(function sizeCh(button) {
+        button.style.fontFamily = fonts[it2];})); 
+
+    document.getElementById("estilo2").style.fontFamily = fonts[it2];
+
+        it2++;
+
     if(it2 == fonts.length){
         it2 = 0;
     }
@@ -36,11 +44,26 @@ function colorChanger2(valor){
 
 function sizeFontChanger(){
 document.body.style.fontSize = sizes[it4];
-document.getElementById("estilo-btn1").style.fontSize = sizes[it4];
-document.getElementById("estilo-btn4").style.fontSize = sizes[it4];
-document.getElementById("estilo-btn3").style.fontSize = sizes[it4];
+var botones = document.getElementsByTagName("button");
+(Array.from(document.querySelectorAll("button")).map(function sizeCh(button) {
+button.style.fontSize = sizes[it4];})); 
 it4++;
 if(it4 == sizes.length){
     it4 = 0;
+    }
 }
+
+
+
+function nameChanger(){
+    let = nombre = prompt("Ingrese un nombre");
+    if(nombre.length > 20){
+        alert("El nombre es muy largo, introduzca otro.")
+    }else{
+        document.getElementById("estilo-btn5").textContent = "Nombre: " + nombre;
+    }
+}
+
+function beautifulText(){
+    document.getElementById("frase").textContent = "\" " + frase[Math.floor(Math.random()*frase.length)]+ " \"";
 }
